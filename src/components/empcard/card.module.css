@@ -1,0 +1,35 @@
+.card{
+    width: 500px;
+    height: 300px;
+    display: flex;
+    gap: 14px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.col1 img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.col1{
+    width: 40%;
+}
+
+.col2{
+    width: 60%;
+}
+
+.intBtn{
+    background-color: #102851;
+    color: #fff;
+    width: 130px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #2AA8FF;
+   
+    font-weight: 600;
+    padding: 10px 20px;
+}

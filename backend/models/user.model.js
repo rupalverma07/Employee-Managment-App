@@ -8,6 +8,14 @@ const User = {
     findByEmailId:(email,callback) =>{
         const query = 'SELECT * FROM users WHERE email = ?';
         db.query(query,[email],callback)
+    },
+    findByEmployeeId:(id,callback) =>{
+        const query = 'SELECT * FROM users WHERE id = ?';
+        db.query(query,[id],callback)
+    },
+    findByRole:(callback) =>{
+        const query = 'SELECT * FROM users WHERE role = "employee"'
+        db.query(query,callback)
     }
 }
 

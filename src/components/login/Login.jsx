@@ -26,6 +26,11 @@ const Login = () => {
           localStorage.setItem('token', JSON.stringify(res.data.token));
           localStorage.setItem('user', JSON.stringify(res.data.user));
         //   navigate('/',{state:res.data});
+        if(res.data.user.role === 'employee'){
+          navigate('/employee')
+        }else{
+          navigate('/admin')
+        }
         } catch (error) {
           alert('Enter valid Email or password');
           console.log(error)
